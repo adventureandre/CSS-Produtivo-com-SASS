@@ -1,0 +1,20 @@
+.btn{
+  border-radius:4px ;
+  padding: 6px 12px;
+  background-color: #6666;
+  color: #ffff;
+  outline: none;
+  font-size: 0.875em;
+  cursor: pointer;
+  border: 0;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3) ;
+
+  &:hover{
+    @if $button-hover-type == 'darken' {
+      background-color: darken(#666,$button-hover-amount);
+    }@else {
+      background-color: lighten(#666,$button-hover-amount);
+    }
+
+  }
+}
